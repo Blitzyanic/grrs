@@ -1,4 +1,4 @@
-this repo os used for me to follow the rust <a href="https://rust-cli.github.io/book/index.html">cli tutorial</a>
+this repo is used for me to follow/track the rust <a href="https://rust-cli.github.io/book/index.html">cli tutorial</a>
 
 end of README... lol
 <br>
