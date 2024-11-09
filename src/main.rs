@@ -9,5 +9,13 @@ struct Cli {
 fn main() {
     let args: Cli = Cli::parse();
 
-    println!("pattern: {:?}\n path: {:?}", args.pattern, args.path);
+    // TODO: add Bufreader instead of read_to_string
+    let content: String = std::fs::read_to_string(&args.path)
+        .expect("could not read file");
+
+    for line in content.lines() {
+        if line.contains(&args.pattern) {
+            println!("{}", line);
+        }
+    }
 }
